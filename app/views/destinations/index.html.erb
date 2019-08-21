@@ -1,0 +1,11 @@
+<% if @destinations.any? %>
+
+  <% @destinations.each do |destination| %>
+    <ul>
+      <li><%= destination["destination"] %></li>
+    </ul>
+  <% end %>
+
+<% else %>
+  <p>You are a failure. Try again.</p>
+<% end %>
